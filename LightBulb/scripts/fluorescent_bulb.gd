@@ -8,7 +8,7 @@ func _init():
 	inherit_groups = false
 	display_name = "Fluorescent Bulb"
 	localized_names = {}
-	value = 0
+	value = 2
 	description = ""
 	localized_descriptions = {}
 	values = []
@@ -16,7 +16,11 @@ func _init():
 	groups = []
 	sfx = []
 	effects = [
-	{"comparisons": [{"a": "destroyed", "b": true}], "value_to_change": "value_bonus", "diff": 5},
+	{
+		"effect_type": "adjacent_symbols",
+		"comparisons": [{"a": "type", "b": "birdseed"}],
+		"value_to_change": "destroyed", "diff": true, 
+		"anim": "bounce", "anim_targets": "adjacent_symbol"
 	{},
 	{}
 	]

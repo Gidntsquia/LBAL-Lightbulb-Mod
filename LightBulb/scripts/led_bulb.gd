@@ -8,7 +8,7 @@ func _init():
 	inherit_groups = false
 	display_name = "LED Bulb"
 	localized_names = {}
-	value = 0
+	value = 3
 	description = ""
 	localized_descriptions = {}
 	values = []
