@@ -2,11 +2,11 @@ extends "res://Mod Data.gd"
 
 func _init():
 	mod_type = "symbol"
-	type = "fluorescent"
-	inherit_effects = false
-	inherit_art = false
-	inherit_groups = false
-	display_name = "Fluorescent Bulb"
+	type = "light_bulb"
+	inherit_effects = true
+	inherit_art = true
+	inherit_groups = true
+	display_name = "Light Bulb"
 	localized_names = {}
 	value = 0
 	description = ""
