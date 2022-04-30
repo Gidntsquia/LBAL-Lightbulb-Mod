@@ -1,22 +1,22 @@
 extends "res://Mod Data.gd"
 
 func _init():
-	mod_type = "symbol"
+	mod_type = "existing_symbol"
 	type = "light_bulb"
 	inherit_effects = true
 	inherit_art = true
 	inherit_groups = true
 	display_name = "Light Bulb"
 	localized_names = {}
-	value = 0
+	value = 1
 	description = ""
 	localized_descriptions = {}
 	values = []
-	rarity = "none"
-	groups = []
+	rarity = "common"
+	groups = ["bulb"]
 	sfx = []
 	effects = [
-	{"comparisons": [{"a": "destroyed", "b": true}], "value_to_change": "value_bonus", "diff": 5},
+	{},
 	{},
 	{}
 	]
